@@ -1,7 +1,16 @@
 import myPic from "./assets/me.jpg";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import "./App.css";
 
+AOS.init({
+  duration: 1000,
+  easing: "ease-out-cubic",
+  anchorPlacement: 'top-center',
+})
+
 function App() {
+
   return (
     <div className="contentwrapper">
       <div className="header" id="0">
@@ -9,7 +18,7 @@ function App() {
       </div>
       <div className="main">
         <div className="content">
-          <div className="left mob-2">
+          <div className="left mob-2" data-aos='fade-in'>
             <h1 className="title" id="1">
               Who I am
             </h1>
@@ -48,15 +57,15 @@ function App() {
               my GitHub.
             </a>
           </div>
-          <div className="right flex-center mob-1">
+          <div className="right flex-center mob-1" data-aos='fade-in'>
             {/* <img src={myPic} alt="My Face" className="picture" /> */}
             <div id="mypic"></div>
           </div>
-          <div className="left flex-center mob-3">
+          <div className="left flex-center mob-3" data-aos='fade-up'>
             <div id="gitpic"></div>{" "}
             {/*This used to be an IMG but this way scalesbetter with mobile.*/}
           </div>
-          <div className="right mob-4">
+          <div className="right mob-4" data-aos='fade-up'>
             <h1 className="title" id="2">
               My Code
             </h1>
@@ -106,7 +115,7 @@ function App() {
             working on in my spare time as well as my actual spare time
             activities like gaming.
           </div>
-          <div className="left mob-6">
+          <div className="left mob-6" data-aos='fade-up'>
             <h1 className="title" id="3">
               How to contact me
             </h1>
@@ -148,7 +157,7 @@ function App() {
             <br /> I only post there occasionally but do regurlarly answer to
             messages.
           </div>
-          <div className="right flex-center mob-5">
+          <div className="right flex-center mob-5" data-aos='fade-up'>
             <div id="mailpic"></div>
           </div>
         </div>
