@@ -9,11 +9,7 @@ function App() {
       </div>
       <div className="main">
         <div className="content">
-          <div className="right flex-center">
-            {/* <img src={myPic} alt="My Face" className="picture" /> */}
-            <div id="mypic"></div>
-          </div>
-          <div className="left">
+          <div className="left mob-2">
             <h1 className="title" id="1">
               Who I am
             </h1>
@@ -52,11 +48,15 @@ function App() {
               my GitHub.
             </a>
           </div>
-          <div className="left flex-center">
+          <div className="right flex-center mob-1">
+            {/* <img src={myPic} alt="My Face" className="picture" /> */}
+            <div id="mypic"></div>
+          </div>
+          <div className="left flex-center mob-3">
             <div id="gitpic"></div>{" "}
             {/*This used to be an IMG but this way scalesbetter with mobile.*/}
           </div>
-          <div className="right">
+          <div className="right mob-4">
             <h1 className="title" id="2">
               My Code
             </h1>
@@ -106,10 +106,7 @@ function App() {
             working on in my spare time as well as my actual spare time
             activities like gaming.
           </div>
-          <div className="right flex-center">
-            <div id="mailpic"></div>
-          </div>
-          <div className="left">
+          <div className="left mob-6">
             <h1 className="title" id="3">
               How to contact me
             </h1>
@@ -150,6 +147,9 @@ function App() {
             If an answer can wait, probably your best bet.
             <br /> I only post there occasionally but do regurlarly answer to
             messages.
+          </div>
+          <div className="right flex-center mob-5">
+            <div id="mailpic"></div>
           </div>
         </div>
       </div>
