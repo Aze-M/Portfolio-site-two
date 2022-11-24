@@ -31,7 +31,7 @@ function App() {
             <br /> <br />
             My main site can be found{" "}
             <a
-              href="http://aze-m.com"
+              href="https://aze-m.com"
               target="_blank"
               rel="noopener noreferrer"
             >
