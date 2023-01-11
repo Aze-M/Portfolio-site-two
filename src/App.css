@@ -8,7 +8,7 @@
   font-size: 16pt;
 
   --CLR-NeutralMain: #ffffff;
-  --CLR-NeutralSecond: #c1cad6;
+  --CLR-NeutralSecond: var(--CLR-NeutralMain);
   --CLR-AccentMain: #226ce0;
   --CLR-AccentSecond: #2b193d;
 
@@ -43,7 +43,7 @@
 
 .dark {
   --CLR-NeutralMain: #000;
-  --CLR-NeutralSecond: #333;
+  --CLR-NeutralSecond: var(--CLR-NeutralMain);
   --CLR-AccentMain: hsl(218, 79%, 21%);
   --CLR-AccentSecond: #2b193d;
 
