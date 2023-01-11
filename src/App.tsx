@@ -1,24 +1,65 @@
 import myPic from "./assets/me.jpg";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
+import React from "react";
 
 AOS.init({
   duration: 1000,
   easing: "ease-out-cubic",
-  anchorPlacement: 'top-center',
-})
+  anchorPlacement: "top-center",
+});
+
+class Loader extends React.Component {
+  // This is an extremely clunky way to do this but it works. Why did I make this in React?
+  componentDidMount(): void {
+    let theme = localStorage.getItem("darktheme");
+    console.log(theme);
+
+    if (theme === "true") {
+      document.documentElement.className = "dark";
+      let checkbox = document.getElementById("dark") as HTMLInputElement;
+      checkbox.checked = true;
+    }
+  }
+
+  render() {
+    return <div></div>;
+  }
+}
 
 function App() {
-
   return (
     <div className="contentwrapper">
       <div className="header" id="0">
-        <div className="mid">Christian Dirks, Web-Dev</div>
+        <div className="mid">
+          <form action="" id="themeselect">
+            <label>Dark Theme</label>
+            <input
+              type="checkbox"
+              name="dark"
+              id="dark"
+              onClick={() => {
+                let self: HTMLInputElement | null = document.getElementById(
+                  "dark"
+                ) as HTMLInputElement;
+
+                if (self?.checked) {
+                  document.documentElement.className = "dark";
+                  localStorage.setItem("darktheme", "true");
+                } else {
+                  document.documentElement.className = "";
+                  localStorage.setItem("darktheme", "false");
+                }
+              }}
+            />
+          </form>{" "}
+          Christian Dirks, Web-Dev
+        </div>
       </div>
       <div className="main">
         <div className="content">
-          <div className="left mob-2" data-aos='fade-in'>
+          <div className="left mob-2" data-aos="fade-in">
             <h1 className="title" id="1">
               Who I am
             </h1>
@@ -57,15 +98,15 @@ function App() {
               my GitHub.
             </a>
           </div>
-          <div className="right flex-center mob-1" data-aos='fade-in'>
+          <div className="right flex-center mob-1" data-aos="fade-in">
             {/* <img src={myPic} alt="My Face" className="picture" /> */}
             <div id="mypic"></div>
           </div>
-          <div className="left flex-center mob-3" data-aos='fade-up'>
+          <div className="left flex-center mob-3" data-aos="fade-up">
             <div id="gitpic"></div>{" "}
             {/*This used to be an IMG but this way scalesbetter with mobile.*/}
           </div>
-          <div className="right mob-4" data-aos='fade-up'>
+          <div className="right mob-4" data-aos="fade-up">
             <h1 className="title" id="2">
               My Code
             </h1>
@@ -83,13 +124,15 @@ function App() {
                 <li>React</li>
                 <li>React Native</li>
                 <li>Lua</li>
+                <li>CSS 3</li>
               </ul>
               <ul>
-                <li>CSS 3</li>
                 <li>HTML 5</li>
                 <li>Electron</li>
                 <li>Express.js</li>
                 <li>MariaDB JS</li>
+                <li>Rust</li>
+                <li>Rocket (Rust)</li>
               </ul>
             </div>
             You can find all of my public code{" "}
@@ -115,7 +158,7 @@ function App() {
             working on in my spare time as well as my actual spare time
             activities like gaming.
           </div>
-          <div className="left mob-6" data-aos='fade-up'>
+          <div className="left mob-6" data-aos="fade-up">
             <h1 className="title" id="3">
               How to contact me
             </h1>
@@ -157,7 +200,7 @@ function App() {
             <br /> I only post there occasionally but do regurlarly answer to
             messages.
           </div>
-          <div className="right flex-center mob-5" data-aos='fade-up'>
+          <div className="right flex-center mob-5" data-aos="fade-up">
             <div id="mailpic"></div>
           </div>
         </div>
@@ -180,26 +223,25 @@ function App() {
                 >
                   Linked In
                 </a>
-                <li>
-                  <a
-                    href="https://leetcode.com/Aze-M/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LeetCode
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/Aze_EDM"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Twitter
-                  </a>
-                </li>
               </li>
-
+              <li>
+                <a
+                  href="https://leetcode.com/Aze-M/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LeetCode
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/Aze_EDM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
               <li>
                 <a href="mailto:christian.dirks.95@gmail.com">Mail</a>
               </li>
@@ -245,6 +287,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Loader></Loader>
     </div>
   );
 }
