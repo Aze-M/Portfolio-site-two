@@ -74,27 +74,20 @@ function App() {
             <a
               href="https://aze-m.com"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               here!
             </a>
             <br />
             It has a private codebase, as well as implementation of a few
             express.js backends which are closed off to outside requests.
             <br />
-            <br />
-            Always the quick learner I have also made a blog reader App in React
-            Native, which grabs the Posts from my main site and transforms them
-            into the CSS-Less display of Native.
-            <br />
-            <br />
-            The entire project including learning styling in Native and Native
-            Elements took roughly 4 hours and can be found on{" "}
+            <br />I have since expanded to C and its Supersets as well. All of
+            which and the things I do with them (except Unity Engine projects)
+            you can find on{" "}
             <a
-              href="https://github.com/Aze-M/Aze-M-Blog-Reader"
+              href="https://github.com/Aze-M/"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               my GitHub.
             </a>
           </div>
@@ -125,32 +118,24 @@ function App() {
                 <li>React Native</li>
                 <li>Lua</li>
                 <li>CSS 3</li>
+                <li>HTML 5</li>
               </ul>
               <ul>
-                <li>HTML 5</li>
                 <li>Electron</li>
                 <li>Express.js</li>
                 <li>MariaDB JS</li>
                 <li>Rust</li>
                 <li>Rocket (Rust)</li>
+                <li>C++ (Half-Life, Console Apps, Drogon)</li>
+                <li>C# (ASP.Net, Unity)</li>
               </ul>
             </div>
             You can find all of my public code{" "}
             <a
               href="https://github.com/Aze-M"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               on GitHub
-            </a>
-            <br /> <br />
-            Whenever I am not working, I also solve problems on{" "}
-            <a
-              href="https://leetcode.com/Aze-M/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LeetCode
             </a>
             <br />
             <br />
@@ -178,8 +163,7 @@ function App() {
             <a
               href="https://www.linkedin.com/in/christian-dirks-145959209/"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               Writing me on Linked In
             </a>
             <br />
@@ -191,8 +175,7 @@ function App() {
             <a
               href="https://twitter.com/Aze_EDM"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               Twitter
             </a>
             <br />
@@ -219,8 +202,7 @@ function App() {
                 <a
                   href="https://www.linkedin.com/in/christian-dirks-145959209/"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   Linked In
                 </a>
               </li>
@@ -228,8 +210,7 @@ function App() {
                 <a
                   href="https://leetcode.com/Aze-M/"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   LeetCode
                 </a>
               </li>
@@ -237,8 +218,7 @@ function App() {
                 <a
                   href="https://twitter.com/Aze_EDM"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   Twitter
                 </a>
               </li>
@@ -251,8 +231,7 @@ function App() {
                 <a
                   href="https://pfo.aze-m.com"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   Other Portfolio Site
                 </a>
               </li>
@@ -260,8 +239,7 @@ function App() {
                 <a
                   href="https://aze-m.com"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   Main Site
                 </a>
               </li>
@@ -269,8 +247,7 @@ function App() {
                 <a
                   href="https://github.com/Aze-M"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   GitHub
                 </a>
               </li>
@@ -281,7 +258,7 @@ function App() {
           </div>
           <div className="right">
             <div className="text">
-              © Christian Dirks, 2022 <br /> Images by Christian Dirks and
+              © Christian Dirks, 2023 <br /> Images by Christian Dirks and
               Unsplash
             </div>
           </div>
